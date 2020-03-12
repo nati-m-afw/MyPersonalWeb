@@ -52,13 +52,22 @@
     <!-- Body -->
     <table align="center">
         <tr>
-            <td>
+            <td align="center">
                 <h2>CONTACT</h2>
             </td>
         </tr>
         <tr>
             <td>
-                <p>Always looking forward to collaborating with new people. Contact me if you've got any project ideas.</p>
+                <font face="Bahnschrift Light" size="3em">
+                    <p>Always looking forward to collaborating with new people. Contact me if you've got any project ideas.</p>
+                </font>
+            </td>
+        </tr>
+        <tr>   
+            <td align="center">
+                <font face="Bahnschrift Light" size="3em">
+                    <p>You can use social media or fill out the form below to get in touch with me.</p>
+                </font>
             </td>
         </tr>
         <tr>
@@ -67,35 +76,37 @@
             </td>
         </tr>
     </table>
+    <br><br>
 
     <!-- Form -->
-    <form action="">
-        <table align="center" width="50%">
+    <font face="Bahnschrift Light" size="3em">
+    <form action="mailto: google@gmail.com" method="GET" enctype="utf-8">
+        <table align="center" cellspacing=10px>
             <tr>
                 <td><label for="name">Name*</label></td>
             </tr>
             <tr>
-                <td><input type="text" name="fname" id="fname"></td>
-                <td><input type="text" name="sname" id="sname"></td>
+                <td><input type="text" size="50%" name="fname" id="fname" pattern="(?=.*[A-Z])(?=.*[a-z]).{2,}" title="Must contain at least one uppercase and one lowercase letter" required></td>
+                <td><input type="text" size="50%" name="sname" id="sname" pattern="(?=.*[A-Z])(?=.*[a-z]).{2,}" title="Must contain at least one uppercase and one lowercase letter" required></td>
             </tr>
             <tr>
                 <td><font size="1em">First Name</font></td>
                 <td><font size="1em">Last Name</font></td>
             </tr>
             <tr>
-                <td><label for="email">Email</label></td>
+                <td><label for="email">Email*</label></td>
             </tr>
             <tr>
-                <td><input type="email" name="email" id="email"></td>
+                <td colspan="2"><input type="email" size="108" name="email" id="email" required></td>
             </tr>
             <tr>
-                <td><label for="sub">Subject</label></td>
+                <td><label for="sub">Subject*</label></td>
             </tr>
             <tr>
-                <td><input type="text" name="sub" id="sub"></td>
+                <td colspan="2"><input type="text" size="108" name="sub" id="sub" required></td>
             </tr>
             <tr>
-                <td><label for="msg">Messgae</label></td>
+                <td><label for="msg">Messgae*</label></td>
             </tr>
             <tr>
                 <td colspan="2"><textarea name="msg" id="msg" cols="100" rows="6"></textarea></td>
@@ -105,6 +116,7 @@
             </tr>
         </table>
     </form>
+    </font>
 
 </font>
 </body>
